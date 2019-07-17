@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>linux常用命令 | 起风了~~~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="linux history  # 偷窥别人常用命令神器 time 12345678date                                    # 查看时间date -s &amp;quot;2018-12-24 10:09:12&amp;quot;           # 修改时间hwclock --hctosys                       # 恢复硬件时间hwclock -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux常用命令">
+<meta property="og:url" content="https://morninglu.github.io/2018/12/26/linux常用命令/index.html">
+<meta property="og:site_name" content="起风了~~~">
+<meta property="og:description" content="linux history  # 偷窥别人常用命令神器 time 12345678date                                    # 查看时间date -s &amp;quot;2018-12-24 10:09:12&amp;quot;           # 修改时间hwclock --hctosys                       # 恢复硬件时间hwclock -">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-17T02:58:07.808Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux常用命令">
+<meta name="twitter:description" content="linux history  # 偷窥别人常用命令神器 time 12345678date                                    # 查看时间date -s &amp;quot;2018-12-24 10:09:12&amp;quot;           # 修改时间hwclock --hctosys                       # 恢复硬件时间hwclock -">
+  
+    <link rel="alternate" href="/atom.xml" title="起风了~~~" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">起风了~~~</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://morninglu.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux常用命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/26/linux常用命令/" class="article-date">
+  <time datetime="2018-12-26T06:15:04.000Z" itemprop="datePublished">2018-12-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      linux常用命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="linux"><a href="#linux" class="headerlink" title="linux"></a>linux</h3><ol start="0">
+<li>history  # 偷窥别人常用命令神器</li>
+<li><p>time</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">date                                    # 查看时间</span><br><span class="line">date -s &quot;2018-12-24 10:09:12&quot;           # 修改时间</span><br><span class="line">hwclock --hctosys                       # 恢复硬件时间</span><br><span class="line">hwclock -w                              # 同步系统时间到硬件时间</span><br><span class="line">ntpdate time.windows.com                # 系统时间同步到网络时间</span><br><span class="line"></span><br><span class="line">mv /etc/localtime /etc/localtime.bak    # 修改时区</span><br><span class="line">ln -s /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开机执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line">vim ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>防火墙 root</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iptable -L                   # 查看防火墙状态</span><br><span class="line">iptable -F                   # 关闭防火墙</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>远程拷贝</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp root@192.168.100.25:/data/release/file_name ./</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看滚动日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail * -f | grep -E &apos;Traceback|traceback&apos; -a50</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>知道文件部分内容查找文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep &apos;检索内容&apos; ./ -r</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>知道文件名查文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ./ -name xxxx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看进程&amp;进程配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep desc</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="数据库的原则"><a href="#数据库的原则" class="headerlink" title="数据库的原则"></a>数据库的原则</h3><ol>
+<li>mysql用redis做缓存</li>
+<li>运营的数据的需求不要写在业务逻辑里面，而是从源数据里面去导出</li>
+</ol>
+<h3 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h3><ol>
+<li><p>用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot  # 登录</span><br><span class="line">select user();  # 查看当前用户</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE database_name;  # 创库</span><br><span class="line">DROP DATABASE database_name;  # 删库</span><br><span class="line">show database;  # 查看所有库</span><br><span class="line">grant all privileges on database_name.* to &apos;username&apos;@&apos;%&apos; identified by &apos;password&apos;;  # 添加权限</span><br><span class="line">flush privileges;  # 刷新权限</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE table_name;  #删除表</span><br><span class="line">show tables;  # 查看所有表</span><br><span class="line">desc table_name;  # 查看单表</span><br><span class="line">ALTER TABLE `table_name` ADD `field_name` INT NOT NULL DEFAULT COMMENT &apos;desc&apos; AFTER `field_name`;  # 添加字段</span><br><span class="line">ALTER TABLE `table_name` ADD PRIMARY KEY `field_name`;  # 给表添加主键</span><br><span class="line">ALTER TABLE `table_name` DROP `field_name`;  # 删除字段</span><br><span class="line">show create table `table_name`;  # 查看表创建语句</span><br><span class="line">SELECT * FROM `table_name01` WHERE  gname LIKE &apos;%xxx%&apos; UNION ALL SELECT * FROM `table_name02` WHERE  gname LIKE &apos;%xxx%&apos;;  # 连表查询</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h3><ol>
+<li><p>批量删除key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-cli -h 127.0.0.1 -p 6379 -n 0 keys &quot;VPOKR_uifo*&quot; | xargs redis-cli -h 127.0.0.1 -p 6379 -n 0 del</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动停用重启</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">redis-server /etc/redis/redis.conf  # 启用redis</span><br><span class="line">redis-server stop                   # 停止</span><br><span class="line">redis-server restart                # 从启</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>杂</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">select n  # 切换库</span><br><span class="line">TTL key  # 剩余生存时间s</span><br><span class="line">type key  # key的类型</span><br><span class="line">zrange zsetname 0 -1 withscores  # 遍历zset的key score</span><br><span class="line">hset hashname field v  # 设置hash字段的值</span><br><span class="line">hlen hashname  # hash的字段数</span><br><span class="line">hgetall hashname  # hash所有字段和值</span><br><span class="line">hmget hashname field  # 获取hash中field值</span><br><span class="line">sadd setname v  # 给集合添加元素</span><br><span class="line">smembers setname  # 查看集合内的所有元素</span><br><span class="line">lpush listname v  # 给列表中左插入一个值</span><br><span class="line">lrange listname index_min index_max  # 获取列表中第min到第max的元素</span><br><span class="line">set strname v  # 设置str类型的值</span><br><span class="line">get strname  # 获取str类型的值</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>反序列化</p>
+<ul>
+<li>redis使用要注意反序列化以后hash里的k,v都会变成str</li>
+<li>使用rds.set(‘key’, json.dumps({1: 2})), json.loads(rds.get(‘key’))出来1会变成str 2不会</li>
+</ul>
+</li>
+</ol>
+<h3 id="mongodb"><a href="#mongodb" class="headerlink" title="mongodb"></a>mongodb</h3><ol>
+<li><p>用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo -u username -p password 127.0.0.1:27017/database  # 登录</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">use database_name  # 切换或创建数据库</span><br><span class="line">db.dropDatabase()  # 删除真正使用的数据库	 </span><br><span class="line">show dbs  # 显示所有数据的列表</span><br><span class="line">db  # 显示当前数据库对象或集合</span><br><span class="line"># 给数据创建用户</span><br><span class="line">db.createUser(</span><br><span class="line">     &#123;</span><br><span class="line">       user:&quot;username&quot;,</span><br><span class="line">       pwd:&quot;password&quot;,</span><br><span class="line">       roles:[&#123;role:&quot;readWrite&quot;,db:&quot;database_name&quot;&#125;]</span><br><span class="line">     &#125;</span><br><span class="line">  )</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">db.createCollection(&quot;table_name&quot;, &#123;capped:true, size:1024&#125;)  # 创建一个capped表</span><br><span class="line">db.table_name.insert(&#123;x: 1,y: 2,z: 3&#125;)  # 增</span><br><span class="line">db.table_name.drop()  # 删表</span><br><span class="line"># 查 支持二级查找</span><br><span class="line">db.table_name.find(&#123;</span><br><span class="line">  &quot;fieldname1&quot;: &#123;$gt: min&#125;,</span><br><span class="line">  &quot;fieldname2.sub_fieldname&quot;: v</span><br><span class="line">  &#125;).limit(5).sort(&#123;&quot;fieldname1&quot;: 1, &quot;fieldname2.sub_fieldname&quot;: -1&#125;).pretty()</span><br><span class="line"># 同一字段and查询</span><br><span class="line">db.table_name.find(&#123;</span><br><span class="line">  $and: [&#123;&quot;fieldname&quot;:&#123;$gt:min&#125;&#125;, &#123;&quot;fieldname&quot;:&#123;$lt:max&#125;&#125; ]</span><br><span class="line">  &#125;)</span><br><span class="line">db.table_name.find().limit(2).skip(0)  # 从第0个位置开始查2条数据</span><br><span class="line">db.table_name.ensureIndex(&#123;&quot;fieldname&quot;: 1&#125;)    # 创建索引</span><br><span class="line"># 聚合 通过fieldname1的值进行分组,求fieldname2的和</span><br><span class="line">db.table_name.aggregate( [&#123;$group: &#123;_id: &quot;$fieldname1&quot;, val: &#123;$sum: $fieldname2&#125; &#125; &#125;] )</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://morninglu.github.io/2018/12/26/linux常用命令/" data-id="cjy6oan6v0009e8vcmtg290po" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/27/git/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          git
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/25/摄影家的眼力/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">摄影家的眼力</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/lua/">lua</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/博客搭建/">博客搭建</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/摄影/">摄影</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/28/linux性能排查/">linux性能排查</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/15/修改mac地址/">修改mac地址</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/14/lua语法/">lua语法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/09/man/">man</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/19/django多库/">django多库</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

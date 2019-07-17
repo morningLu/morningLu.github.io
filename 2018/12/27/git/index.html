@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>git | 起风了~~~</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="签名&amp;amp;邮箱 12git config --global user.email &amp;quot;email.com&amp;quot;  # 邮箱git config --global user.name &amp;quot;morninglu&amp;quot;  # 签名  远程仓库 12git remote -v  # 查看远程仓库信息git remote set-url origin remote_git_a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git">
+<meta property="og:url" content="https://morninglu.github.io/2018/12/27/git/index.html">
+<meta property="og:site_name" content="起风了~~~">
+<meta property="og:description" content="签名&amp;amp;邮箱 12git config --global user.email &amp;quot;email.com&amp;quot;  # 邮箱git config --global user.name &amp;quot;morninglu&amp;quot;  # 签名  远程仓库 12git remote -v  # 查看远程仓库信息git remote set-url origin remote_git_a">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-17T02:58:07.808Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git">
+<meta name="twitter:description" content="签名&amp;amp;邮箱 12git config --global user.email &amp;quot;email.com&amp;quot;  # 邮箱git config --global user.name &amp;quot;morninglu&amp;quot;  # 签名  远程仓库 12git remote -v  # 查看远程仓库信息git remote set-url origin remote_git_a">
+  
+    <link rel="alternate" href="/atom.xml" title="起风了~~~" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">起风了~~~</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://morninglu.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/12/27/git/" class="article-date">
+  <time datetime="2018-12-27T08:21:15.000Z" itemprop="datePublished">2018-12-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>签名&amp;邮箱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;email.com&quot;  # 邮箱</span><br><span class="line">git config --global user.name &quot;morninglu&quot;  # 签名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>远程仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote -v  # 查看远程仓库信息</span><br><span class="line">git remote set-url origin remote_git_address  # 设置远程仓库的url对应github中的ssh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>拉取代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull  # 拉取代码</span><br><span class="line">git pull --rebase  # 再推代码远程代码发生改变时要先rebase下 log好看一点</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git status  # 查看修改的文件</span><br><span class="line">git diff  # 查看修改内容</span><br><span class="line">git add .  # 代码从工作区上交到缓冲区</span><br><span class="line">git commit -am &quot;log&quot;  # 代码从缓冲区提交的本地仓库</span><br><span class="line">git commit --amend  # 修改最近一次commit</span><br><span class="line">git push  # 代码从本地仓库推到远程仓库</span><br><span class="line">git push -f  # 以本地代码为准强制推送到远程仓库</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看代码修改日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git log  # 查看commit log</span><br><span class="line">git diff commit_old commit_new  # commit_new和commit_old的差异</span><br><span class="line">git show commit  # 查看某次提交的内容</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git branch  # 查看本地分支</span><br><span class="line">git branch -r  # 查看远程分支</span><br><span class="line">git branch -a  # 查看全部分支</span><br><span class="line">git checkout branch_name  # 切换分支</span><br><span class="line">git checkout -b new_branch_name  # 从当前分支切出新分支</span><br><span class="line">git push --set-upstream origin branch  # 本地分支和远程分支关联</span><br><span class="line">git branch -D branch_name  # 删除本地分支</span><br><span class="line">git push origin --delete branch_name  # 删除远程分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>合代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git merge branch_name --no-ff  # 把branch_name合入当前分支（log好看点）</span><br><span class="line">git rebase branch  # rebase想要的分支</span><br><span class="line">git rebase --continue  # 继续rebase</span><br><span class="line">git rebase --abort  # 回退到rebase、merge之前</span><br><span class="line">git commit  # 把有冲突的注释打开</span><br><span class="line">git push  # merge和rebase同一分支的时候(远程rebase到本地)时用这个</span><br><span class="line">git push -f  # rebase别的分支的时候用这个</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>回退代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout .  # 去掉本地修改（慎用另外也不要开多个gitbush血的教训）</span><br><span class="line">git reset --hard  # 回退到最近的一次commit</span><br><span class="line">git reset --hard commit  # 回退到某个commit</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>本地保存</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git stash save 1  # 把修改保存到本地</span><br><span class="line">git stash list  # 查看保存在本地的修改</span><br><span class="line">git stash pop  # 弹出最近的一次保存</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>背锅侠（好像不用rebase&amp;--no-ff的时候查不出来 未验证）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git blame ./path/file_name | grep &apos;code&apos; -a5  # 查看code的修改人和修改时间</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>init</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init  # 在你想要纳入git管理的文件夹下执行 然后关联远程仓库就可以使用git了</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>git 忽略某个文件(要在代码的根目录，不要是软连接)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim .git/info/exclude  # windows</span><br><span class="line">vim .gitignore         # linux</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://morninglu.github.io/2018/12/27/git/" data-id="cjy6oan6t0007e8vcv9y6qoz1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/27/80d/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          80d
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/12/26/linux常用命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">linux常用命令</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/lua/">lua</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/其他/">其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/博客搭建/">博客搭建</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/摄影/">摄影</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/28/linux性能排查/">linux性能排查</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/15/修改mac地址/">修改mac地址</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/14/lua语法/">lua语法</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/09/man/">man</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/19/django多库/">django多库</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
